@@ -12,7 +12,7 @@ import {
   Datepicker
 } from "react-native-ui-kitten"
 import Slider from "@react-native-community/slider"
-1
+
 import { SlideMenuIcon } from "../../../navigator/slideMenuIcon"
 import { connect } from "react-redux"
 export class __Blank extends React.Component {
