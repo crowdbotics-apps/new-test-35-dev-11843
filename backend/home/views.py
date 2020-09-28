@@ -1,6 +1,6 @@
 from django.views.generic import CreateView, UpdateView, DetailView, ListView
 from django.shortcuts import render
-from .models import CustomText, HomePage, Ghhh
+from .models import VBG1, CustomText, HomePage, Ghhh
 
 
 def home(request):

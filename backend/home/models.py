@@ -10,6 +10,14 @@ class CustomText(models.Model):
     title = models.CharField(
         max_length=150,
     )
+    r1 = models.ForeignKey(
+        "home.CustomText",
+        on_delete=models.SET_DEFAULT,
+        default="123",
+        null=True,
+        blank=True,
+        related_name="customtext_r1",
+    )
 
     def __str__(self):
         return self.title
