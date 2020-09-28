@@ -18,6 +18,14 @@ class CustomText(models.Model):
         blank=True,
         related_name="customtext_r1",
     )
+    r2 = models.ForeignKey(
+        "users.User",
+        on_delete=models.SET_DEFAULT,
+        default="GGGG",
+        null=True,
+        blank=True,
+        related_name="customtext_r2",
+    )
 
     def __str__(self):
         return self.title
