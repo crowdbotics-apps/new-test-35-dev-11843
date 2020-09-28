@@ -45,7 +45,14 @@ class HomePage(models.Model):
 
 class Ghhh(models.Model):
     "Generated Model"
-    r1 = models.BigIntegerField()
+    r1 = models.ForeignKey(
+        "home.CustomText",
+        on_delete=models.SET_DEFAULT,
+        default="ede",
+        null=True,
+        blank=True,
+        related_name="ghhh_r1",
+    )
 
 
 class VBG1(models.Model):
