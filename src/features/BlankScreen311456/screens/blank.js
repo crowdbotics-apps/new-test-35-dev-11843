@@ -24,7 +24,8 @@ export class Blank extends React.Component {
   render = () => (
     <View>
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
-      <Text style={styles.Text_4}>Sample text content123</Text>
+      <Text>Sample text content123</Text>
+      <Text>Sample text content</Text>
     </View>
   )
 }
@@ -36,7 +37,11 @@ const styles = StyleSheet.create({
   Text_4: { color: "#df0707" },
   View_1: {},
   Button_2: {},
-  Text_4: { color: "#df0707" }
+  Text_4: { color: "#df0707" },
+  View_1: {},
+  Button_2: {},
+  Text_4: {},
+  Text_6: {}
 })
 
 function mapStateToProps(state) {
