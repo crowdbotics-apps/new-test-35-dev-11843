@@ -24,13 +24,16 @@ export class Blank extends React.Component {
   render = () => (
     <View>
       <Button title="Press me!" onPress={() => alert("Pressed!")} />
-      <Text style={styles.Text_4}>Sample text content</Text>
+      <Text style={styles.Text_4}>Sample text content123</Text>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   container: { flex: 1, marginHorizontal: 16 },
+  View_1: {},
+  Button_2: {},
+  Text_4: { color: "#df0707" },
   View_1: {},
   Button_2: {},
   Text_4: { color: "#df0707" }
